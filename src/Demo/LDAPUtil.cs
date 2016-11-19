@@ -42,6 +42,7 @@ namespace Demo
                     {
                         var entity = entities.next();
                         var account = entity.getAttribute("sAMAccountName");
+                        //If you need to Case insensitive, please modify the below code.
                         if (account != null && account.StringValue == username)
                         {
                             userDn = entity.DN;
